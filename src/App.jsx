@@ -6,6 +6,12 @@ function WelcomeMessage(name) {
 function greeting(isMorning) {
   return isMorning ? "Good Morning!" : "Good Evening!";
 }
+function showAlert(condition, message) {
+  if (condition) {
+    alert(message);
+  }
+  return null;
+}
 
 function App() {
   const now = new Date();
@@ -13,8 +19,8 @@ function App() {
   return (
     <div>
       <h1>{WelcomeMessage('John')}</h1>
-      <h1>{WelcomeMessage('Jane')}</h1>
       {greeting(isMorning)}
+      {showAlert(isMorning, "It's a beautiful morning!")}
       
     </div>
   );
