@@ -357,7 +357,6 @@ h2::after {
 .contact-links {
   display: flex;
   justify-content: center;
-  flex-direction: row;
   gap: 2rem;
   flex-wrap: wrap;
 }
@@ -501,8 +500,13 @@ h2::after {
   }
   
   .contact-links {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row; /* Keep links horizontal */
+    gap: 1rem; /* Reduce gap on mobile */
+  }
+  
+  .contact-link {
+    padding: 0.8rem 1.5rem; /* Smaller padding on mobile */
+    font-size: 0.9rem; /* Optional: slightly smaller text */
   }
 }
 
@@ -517,5 +521,12 @@ h2::after {
   
   .project-item {
     padding: 1.5rem;
+  }
+  .contact-links {
+    gap: 0.8rem;
+  }
+  
+  .contact-link {
+    padding: 0.7rem 1.2rem;
   }
 }
