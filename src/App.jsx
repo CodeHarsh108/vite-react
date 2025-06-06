@@ -4,32 +4,32 @@ function App() {
   const name = 'Harsh Patil';
   const profession = 'Full Stack Java Developer | Spring Boot Developer';
   const email = 'itsharshhh6@gmail.com';
-  const linkedIn = 'https://www.linkedin.com/in/harsh-patil'; 
-  const github = 'https://github.com/harshpatil06'; 
+  const linkedIn = 'https://www.linkedin.com/in/harshpatil28'; 
+  const github = 'https://github.com/CodeHarsh108'; 
   const projects = [
     {
       title: 'Wealth Map',
       description:
-        'A property mapping platform built with Spring Boot, PostgreSQL + PostGIS, and Leaflet. Includes geo queries, clustering, and admin features.',
-      link: '#'
+      'A handcrafted digital shrine designed to reflect my projects, personality, and passion. Built with React for smooth navigation and modular structure, it showcases featured work, skills, and a bit of who I am behind the code. Responsive, clean, and intentional—this site is both a résumé and a reflection, blending tradition with tech to make a lasting first impression.',
+      link: 'https://github.com/CodeHarsh108/Wealth-Map'
     },
     {
       title: 'Portfolio Website',
       description:
         'My personal digital shrine. Built to showcase my projects, personality, and passion.',
-      link: '#'
+      link: 'https://github.com/CodeHarsh108/vite-react'
     },
     {
       title: 'E-commerce Platform',
-      description:
-        'End-to-end e-commerce web app with authentication, product filtering, and admin dashboards using Spring Boot and React.',
-      link: '#'
+      description: 
+      'Developed a fully functional e-commerce platform with seamless integration between a Spring Boot backend and a responsive React frontend. Implemented user authentication and role-based authorization using JWT and Spring Security. Built dynamic product listings with advanced filtering, search, and pagination. Designed intuitive admin dashboards for managing products, orders, and users. Ensured a smooth shopping experience with cart management, order placement, and secure checkout flow. Focused on scalability, modular architecture, and clean code practices.',
+      link: 'https://github.com/CodeHarsh108/Ecommerce_Application'
     },
     {
-      title: 'Blog Application',
+      title: 'Journal Application',
       description:
-        'A blogging platform with CRUD posts, comment section, and user roles. Built using Spring Boot and Thymeleaf.',
-      link: '#'
+        'Designed and deployed a secure, full-stack journaling app with real-time caching via Redis to boost performance. Engineered robust authentication and role-based access using JWT and Spring Security. Enriched user experience by integrating a third-party weather API with smart caching for contextual insights. Maintained clean code practices with Swagger/OpenAPI for seamless API documentation and collaboration.',
+      link: 'https://github.com/CodeHarsh108/Journal-App'
     }
   ];
 

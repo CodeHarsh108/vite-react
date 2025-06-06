@@ -3,11 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root" class="App"></div>
+
     <script type="module" src="/src/main.jsx"></script>
+
+    <script>
+      // Create cosmic particles
+      document.addEventListener('DOMContentLoaded', () => {
+        const space = document.querySelector('.App');
+        for (let i = 0; i < 50; i++) {
+          const particle = document.createElement('div');
+          particle.className = 'particle';
+          particle.style.cssText = `
+            position: absolute;
+            width: ${Math.random() * 3 + 1}px;
+            height: ${Math.random() * 3 + 1}px;
+            background: rgba(0, 209, 255, ${Math.random() * 0.5 + 0.1});
+            border-radius: 50%;
+            top: ${Math.random() * 100}vh;
+            left: ${Math.random() * 100}vw;
+            animation: float ${Math.random() * 10 + 5}s linear infinite;
+            z-index: 0;
+          `;
+          space.appendChild(particle);
+        }
+      });
+    </script>
   </body>
 </html>
